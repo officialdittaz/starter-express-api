@@ -1,4 +1,5 @@
 const express = require('express')
+const fs = require('fs-extra')
 const app = express()
 app.all('/', (req, res) => {
   let html = fs.readFileSync('./index.html', 'utf-8')
